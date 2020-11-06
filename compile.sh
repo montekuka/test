@@ -7,8 +7,8 @@ TARGET=${1:-hyperion}
 CFG="${2:-Release}"
 INST="$( [ "${3:-}" = "install" ] && echo true || echo false )"
 
-sudo apt-get -y update
-sudo apt-get -y install                 \
+sudo apt-get update
+sudo apt-get install                 \
 	git                          \
 	cmake                        \
 	build-essential              \
